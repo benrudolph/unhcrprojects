@@ -9,9 +9,10 @@
 
   <div id="main">
 
-    <header>
-      <h1>{% if page.title %} {{ page.title }} {% else %} UNHCR Innovation {% endif %}</a></h1>
-    <header>
+    <header class="header">
+    <h1>{% if page.title %} <a href="/"><img class="logo" height="50px" src="/img/innovationlogo.png" /></a>{{ page.title }} {% else %} UNHCR Innovation {% endif %}</a></h1>
+      {% if page.src %}<a class="source" href="{{ page.src }}">View original site</a>{% endif %}
+    </header>
 
     {{ content }}
 

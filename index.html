@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Jekyll Base
 ---
 
 <div class="content">
@@ -13,7 +12,9 @@ title: Jekyll Base
           <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
         </div>
         <div class="image-container">
-          <img width="700" height="80" src="img/{{ post.image || image: "default.jpg" }}" />
+          <a href="{{ post.url }}">
+            <img width="700" height="80" src="img/{{ post.image || image: "default.jpg" }}" />
+          </a>
         </div>
       </li>
       {% endfor %}
