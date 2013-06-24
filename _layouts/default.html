@@ -8,12 +8,18 @@
 <body>
   <div id="main">
     <header class="header">
-    <h1>{% if page.title %} <a href="{{ site.baseurl }}"><img class="logo" height="50px" src="{{ site.baseurl }}/img/innovationlogo.png" /></a>{{ page.title }} {% else %} UNHCR Innovation {% endif %}</a></h1>
+    <h1><a href="{{ site.baseurl }}"><img class="logo" height="50px" src="{{ site.baseurl }}/img/innovationlogo.png" /></a>{% if page.title %} {{ page.title }} {% else %} Projects {% endif %}</a></h1>
       {% if page.src %}<a class="source" href="{{ page.src }}">View original site</a>{% endif %}
     </header>
 
     {{ content }}
 
+    <footer>
+      <ul>
+        <li><a target="_blank" href="https://www.facebook.com/UNHCRInnovate"><i class="facebook"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/UNHCRInnovation"><i class="twitter"></i></a></li>
+        <li><a target="_blank" href="https://plus.google.com/116082661783781247268"><i class="google"></i></a></li>
+    </footer>
   </div>
 </body>
 </html>

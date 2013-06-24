@@ -1,7 +1,7 @@
 body {
   text-rendering: optimizeLegibility;
   font-family: "PT Sans", sans-serif;
-  background: white;
+  background: #fafcff;
   color: black;
   padding: 0;
   margin-left: 100px;
@@ -30,6 +30,7 @@ h1 {
   font-size: 56px;
   font-weight: 300;
   margin: 0px;
+  text-shadow: 1px 1px 2px black
 }
 
 .post {
@@ -76,4 +77,44 @@ p {
   padding-right: 25px;
   margin-right: 25px;
   border-right: 3px solid black;
+}
+
+i.facebook {
+  background: url('../img/facebook.png') ;
+  background-size: 25px 25px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+  margin-left: -100px;
+  padding-left: 100px;
+  border-top: 1px solid #d8d7d9;
+}
+
+footer ul {
+  white-space: nowrap;
+}
+
+footer li {
+  float: left;
+  margin: 7px;
+}
+
+i.google {
+  background: url('../img/google.png');
+  background-size: 25px 25px;
+}
+
+i.twitter {
+  background: url('../img/twitter.png');
+  background-size: 25px 25px;
+}
+
+i {
+  display: block;
+  width: 25px;
+  height: 25px;
 }
