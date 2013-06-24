@@ -1,0 +1,38 @@
+body {
+  text-rendering: optimizeLegibility;
+  font-family: "PT Sans", sans-serif;
+  background: white;
+  color: black;
+  padding: 0;
+  margin-left: 50px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ececec;
+  text-decoration: underline;
+}
+
+.post {
+  width: 700px;
+}
+
+.post-header .title {
+  float: left;
+}
+
+.post-header .date {
+  float: right;
+}
+
+iframe {
+  border: 1px solid #999;
+}
